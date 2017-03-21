@@ -4,20 +4,19 @@ import { Component, Inject} from '@angular/core';
   selector: 'app-root',
   template: `<div>
 
-<app-simple-form></app-simple-form>
+<ul>
+	<li *ngFor="let message of mail.messages">
 
-{{mail.message}}
-<hr>
-{{api}}
+		{{message}}
+	</li>
+</ul>
 
-  </div>
-  `
+  </div>`
 })
 export class AppComponent {
   title = `Let's get started!`;
 
   constructor(
-  	@Inject('mail') private mail,
-  	@Inject('api') private api,
+  	@Inject('mail') private mail
   ){}
 }
