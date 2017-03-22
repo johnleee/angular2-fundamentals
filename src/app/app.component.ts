@@ -18,7 +18,7 @@ import { Component, Inject} from '@angular/core';
   </div>`,
     styles:[`
   app-simple-form{
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 `]
 })
